@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb 20 14:00:12 2024
+# Process ID: 11756
+# Current directory: C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8296 C:\devWorks\AudioProcessing\SoC_PynzZ2_AUDIO\SoC_PynzZ2_AUDIO.xpr
+# Log file: C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/vivado.log
+# Journal file: C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO\vivado.jou
+# Running On: 5CD2042974, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 34007 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_axi_gpio_0_0 design_1_rst_ps7_0_100M_0 design_1_ps7_0_axi_periph_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_axi_gpio_0_0 design_1_rst_ps7_0_100M_0 design_1_ps7_0_axi_periph_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_audio_codec_ctrl_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps7_0_100M_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_audio_codec_ctrl_0_0_synth_1 design_1_auto_pc_0_synth_1 design_1_axi_gpio_0_0_synth_1 design_1_processing_system7_0_0_synth_1 design_1_rst_ps7_0_100M_0_synth_1 design_1_xbar_0_synth_1 -jobs 16
+wait_on_run design_1_audio_codec_ctrl_0_0_synth_1
+wait_on_run design_1_auto_pc_0_synth_1
+wait_on_run design_1_axi_gpio_0_0_synth_1
+wait_on_run design_1_processing_system7_0_0_synth_1
+wait_on_run design_1_rst_ps7_0_100M_0_synth_1
+wait_on_run design_1_xbar_0_synth_1
+export_simulation -of_objects [get_files C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.ip_user_files/sim_scripts -ip_user_files_dir C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.ip_user_files -ipstatic_source_dir C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.cache/compile_simlib/modelsim} {questa=C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.cache/compile_simlib/questa} {riviera=C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.cache/compile_simlib/riviera} {activehdl=C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/SoC_PynzZ2_AUDIO.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+regenerate_bd_layout
+regenerate_bd_layout
+write_bd_layout -format pdf -orientation portrait -force C:/devWorks/AudioProcessing/AudioProcessing.pdf
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/devWorks/AudioProcessing/SoC_PynzZ2_AUDIO/AudioProcessing1.xsa

@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/f35b/src/family_support.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/common_types.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/pselect_f.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/address_decoder.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/slave_attachment.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/axi_lite_ipif.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/user_logic.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/iis_deser.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/iis_ser.vhd" \
+"../../../bd/design_1/ipshared/f35b/src/i2s_ctrl.vhd" \
+"../../../bd/design_1/ip/design_1_audio_codec_ctrl_0_0/sim/design_1_audio_codec_ctrl_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort
