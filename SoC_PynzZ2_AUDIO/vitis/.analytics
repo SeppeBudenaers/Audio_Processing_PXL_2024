@@ -42,3 +42,13 @@ timestamp=[2024-02-23 09:42:50], mode=BUILD, duration=0:00:00.771, duration_ms=7
 timestamp=[2024-02-23 09:44:43], mode=BUILD, duration=0:00:00.849, duration_ms=849, data={name=Labo_1, configuration=Debug, clean_build=false}
 timestamp=[2024-02-23 09:45:35], mode=BUILD, duration=0:00:00.793, duration_ms=793, data={name=Labo_1, configuration=Debug, clean_build=false}
 timestamp=[2024-02-23 09:46:29], mode=BUILD, duration=0:00:00.782, duration_ms=782, data={name=Labo_1, configuration=Debug, clean_build=false}
+timestamp=[2024-02-28 10:21:21], mode=BUILD, duration=0:00:00.884, duration_ms=884, data={name=Labo_1, configuration=Debug, clean_build=false}
+timestamp=[2024-02-28 10:22:38], mode=BUILD, duration=0:00:00.767, duration_ms=767, data={name=Labo_1, configuration=Debug, clean_build=false}
+timestamp=[2024-03-06 09:08:54], mode=WORKBENCH_START, duration=0:00:09.340, duration_ms=9340, data={}
+timestamp=[2024-03-06 09:08:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.107, duration_ms=107, data={}
+timestamp=[2024-03-06 09:08:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.222, duration_ms=222, data={editors_count=4, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,Labo_1,Labo_1_system,RemoteSystemsTempFiles}
+timestamp=[2024-03-06 09:10:16], mode=APP_CREATION, duration=0:00:07.802, duration_ms=7802, data={name=Labo_2, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=AudioProcessing2, application_type=application}
+timestamp=[2024-03-06 09:12:55], mode=BUILD, duration=0:00:02.021, duration_ms=2021, data={name=Labo_2, configuration=Debug, clean_build=false}
+timestamp=[2024-03-06 09:13:01], mode=BUILD, duration=0:00:05.980, duration_ms=5980, data={name=Labo_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-03-06 09:50:11], mode=BUILD, duration=0:00:01.014, duration_ms=1014, data={name=Labo_2, configuration=Debug, clean_build=false}
+timestamp=[2024-03-06 09:50:37], mode=BUILD, duration=0:00:01.105, duration_ms=1105, data={name=Labo_2, configuration=Debug, clean_build=false}

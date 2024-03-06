@@ -91,8 +91,8 @@ void audio_test(void)
 		*/
 		for (int i = 0; i < 360; i++)
 		{
-			Xil_Out32(I2S_DATA_TX_L_REG, ~u32Saw[i]);
-			Xil_Out32(I2S_DATA_TX_R_REG, ~u32Saw[i]);
+			Xil_Out32(I2S_DATA_TX_L_REG, ~u32Sine[i]);
+			Xil_Out32(I2S_DATA_TX_R_REG, ~u32Sine[i]);
 			usleep_A9(2);
 		}
 		/*

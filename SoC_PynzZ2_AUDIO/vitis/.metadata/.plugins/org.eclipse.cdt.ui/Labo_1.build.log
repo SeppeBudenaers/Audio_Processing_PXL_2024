@@ -1,4 +1,4 @@
-09:46:28 **** Incremental Build of configuration Debug for project Labo_1 ****
+10:20:22 **** Incremental Build of configuration Release for project Labo_1 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,18 +6,12 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
 ../src/helloworld.c:30:13: warning: unused variable 'status' [-Wunused-variable]
    30 |         int status;
       |             ^~~~~~
 ../src/helloworld.c: In function 'audio_test':
-../src/helloworld.c:60:23: warning: variable 'u32Block' set but not used [-Wunused-but-set-variable]
-   60 |         unsigned long u32Block[360];
-      |                       ^~~~~~~~
-../src/helloworld.c:59:23: warning: variable 'u32Sine' set but not used [-Wunused-but-set-variable]
-   59 |         unsigned long u32Sine[360];
-      |                       ^~~~~~~
 ../src/helloworld.c:58:13: warning: unused variable 'sw_check' [-Wunused-variable]
    58 |         int sw_check;
       |             ^~~~~~~~
@@ -35,17 +29,19 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcp
       |                       ^~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: Labo_1.elf'
 'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "Labo_1.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: Labo_1.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Labo_1.elf  |tee "Labo_1.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  31702	   1160	  22648	  55510	   d8d6	Labo_1.elf
-'Finished building: Labo_1.elf.size'
-' '
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "Labo_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/bin/arm-xilinx-eabi/../../libexec/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/ld.exe: ./src/helloworld.o: in function `audio_test':
+helloworld.c:(.text+0x34): undefined reference to `sin'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [makefile:43: Labo_1.elf] Error 1
+make: *** [makefile:34: all] Error 2
 
-09:46:29 Build Finished (took 770ms)
+10:20:23 Build Finished (took 1s.67ms)
 
