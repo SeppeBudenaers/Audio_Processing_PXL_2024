@@ -27,7 +27,6 @@ XIicPs Iic;
 
 int main()
 {
-	int status;
     init_platform();
 
 

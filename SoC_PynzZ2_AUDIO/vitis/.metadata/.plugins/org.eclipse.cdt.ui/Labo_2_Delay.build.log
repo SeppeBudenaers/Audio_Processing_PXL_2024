@@ -1,0 +1,29 @@
+10:39:40 **** Incremental Build of configuration Debug for project Labo_2_Delay ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Timer_ISR':
+../src/helloworld.c:29:17: warning: unused variable 'delayed_sample_R' [-Wunused-variable]
+   29 |         int32_t delayed_sample_R = 0 ;
+      |                 ^~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Labo_2_Delay.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "Labo_2_Delay.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Labo_2_Delay.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Labo_2_Delay.elf  |tee "Labo_2_Delay.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32548	   1936	 406680	 441164	  6bb4c	Labo_2_Delay.elf
+'Finished building: Labo_2_Delay.elf.size'
+' '
+
+10:39:41 Build Finished (took 876ms)
+
