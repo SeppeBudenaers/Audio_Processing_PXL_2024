@@ -5680,3 +5680,199 @@ con
 
 16:10:28 INFO  : Launch script is exported to file 'C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\test_system\_ide\scripts\debugger_test-default.tcl'
 16:17:43 INFO  : Disconnected from the channel tcfchan#5.
+19:12:35 DEBUG : Logs will be stored at 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/IDE.log'.
+19:12:36 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\temp_xsdb_launch_script.tcl
+19:12:39 INFO  : XSCT server has started successfully.
+19:12:39 INFO  : Successfully done setting XSCT server connection channel  
+19:12:39 INFO  : plnx-install-location is set to ''
+19:12:39 INFO  : Successfully done setting workspace for the tool. 
+19:12:40 INFO  : Platform repository initialization has completed.
+19:13:23 INFO  : Successfully done query RDI_DATADIR 
+19:13:23 INFO  : Registering command handlers for Vitis TCF services
+19:14:31 INFO  : Checking for BSP changes to sync application flags for project 'test'...
+19:15:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:15:33 INFO  : 'jtag frequency' command is executed.
+19:15:33 INFO  : Context for 'APU' is selected.
+19:15:33 INFO  : System reset is completed.
+19:15:36 INFO  : 'after 3000' command is executed.
+19:15:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:15:39 INFO  : Device configured successfully with "C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit"
+19:15:39 INFO  : Context for 'APU' is selected.
+19:15:39 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa'.
+19:15:39 INFO  : 'configparams force-mem-access 1' command is executed.
+19:15:39 INFO  : Context for 'APU' is selected.
+19:15:39 INFO  : Sourcing of 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl' is done.
+19:15:39 INFO  : 'ps7_init' command is executed.
+19:15:39 INFO  : 'ps7_post_config' command is executed.
+19:15:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:40 INFO  : The application 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:15:40 INFO  : 'configparams force-mem-access 0' command is executed.
+19:15:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:15:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:40 INFO  : 'con' command is executed.
+19:15:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:15:40 INFO  : Launch script is exported to file 'C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\test_system\_ide\scripts\debugger_test-default.tcl'
+19:17:00 INFO  : Checking for BSP changes to sync application flags for project 'test'...
+19:17:22 INFO  : Disconnected from the channel tcfchan#1.
+19:17:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:17:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:17:23 INFO  : 'jtag frequency' command is executed.
+19:17:23 INFO  : Context for 'APU' is selected.
+19:17:23 INFO  : System reset is completed.
+19:17:26 INFO  : 'after 3000' command is executed.
+19:17:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:17:29 INFO  : Device configured successfully with "C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit"
+19:17:29 INFO  : Context for 'APU' is selected.
+19:17:33 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa'.
+19:17:33 INFO  : 'configparams force-mem-access 1' command is executed.
+19:17:33 INFO  : Context for 'APU' is selected.
+19:17:33 INFO  : Sourcing of 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl' is done.
+19:17:33 INFO  : 'ps7_init' command is executed.
+19:17:33 INFO  : 'ps7_post_config' command is executed.
+19:17:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:34 INFO  : The application 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:17:34 INFO  : 'configparams force-mem-access 0' command is executed.
+19:17:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:17:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:34 INFO  : 'con' command is executed.
+19:17:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:17:34 INFO  : Launch script is exported to file 'C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\test_system\_ide\scripts\debugger_test-default.tcl'
+19:20:16 INFO  : Checking for BSP changes to sync application flags for project 'test'...
+19:20:44 INFO  : Disconnected from the channel tcfchan#2.
+19:20:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:20:46 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:20:46 INFO  : 'jtag frequency' command is executed.
+19:20:46 INFO  : Context for 'APU' is selected.
+19:20:47 INFO  : System reset is completed.
+19:20:50 INFO  : 'after 3000' command is executed.
+19:20:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:20:52 INFO  : Device configured successfully with "C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit"
+19:20:52 INFO  : Context for 'APU' is selected.
+19:20:55 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa'.
+19:20:55 INFO  : 'configparams force-mem-access 1' command is executed.
+19:20:55 INFO  : Context for 'APU' is selected.
+19:20:55 INFO  : Sourcing of 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl' is done.
+19:20:55 INFO  : 'ps7_init' command is executed.
+19:20:55 INFO  : 'ps7_post_config' command is executed.
+19:20:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:56 INFO  : The application 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:20:56 INFO  : 'configparams force-mem-access 0' command is executed.
+19:20:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:20:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:56 INFO  : 'con' command is executed.
+19:20:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:20:56 INFO  : Launch script is exported to file 'C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\test_system\_ide\scripts\debugger_test-default.tcl'
+19:23:17 INFO  : Disconnected from the channel tcfchan#3.
+19:23:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:23:20 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:23:20 INFO  : 'jtag frequency' command is executed.
+19:23:20 INFO  : Context for 'APU' is selected.
+19:23:20 INFO  : System reset is completed.
+19:23:23 INFO  : 'after 3000' command is executed.
+19:23:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:23:26 INFO  : Device configured successfully with "C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit"
+19:23:26 INFO  : Context for 'APU' is selected.
+19:23:31 INFO  : Hardware design and registers information is loaded from 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa'.
+19:23:31 INFO  : 'configparams force-mem-access 1' command is executed.
+19:23:31 INFO  : Context for 'APU' is selected.
+19:23:31 INFO  : Sourcing of 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl' is done.
+19:23:32 INFO  : 'ps7_init' command is executed.
+19:23:32 INFO  : 'ps7_post_config' command is executed.
+19:23:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:23:33 INFO  : The application 'C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:23:33 INFO  : 'configparams force-mem-access 0' command is executed.
+19:23:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/test/Debug/test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:23:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:23:33 INFO  : 'con' command is executed.
+19:23:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:23:33 INFO  : Launch script is exported to file 'C:\02_PXL\Audio_Processing_PXL_2024\SoC_PynzZ2_AUDIO\vitis\test_system\_ide\scripts\debugger_test-default.tcl'
+19:25:38 INFO  : Disconnected from the channel tcfchan#4.

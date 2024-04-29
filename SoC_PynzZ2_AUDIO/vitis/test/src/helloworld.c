@@ -195,9 +195,18 @@ int main ( void )
 
 	XScuTimer_Start(&Scu_Timer);
 	printf("Welcome enter numbers for DTMF tones\n\r");
-  for(;;){
-	  scanf("%c",DTMF);
-  }
+	printf("Enter 'q' to quit\n\r");
+	while (1) {
+		printf("Enter DTMF tone: ");
+	    scanf(" %c", &DTMF);
+	    printf("\n\r");
+	    if (DTMF == 'q' || DTMF == 'Q') {
+	    	printf("Exiting application\n\r");
+	        break;
+	    }
+	}
+
   cleanup_platform();
+  printf("Clean exit\n\r");
   return 0;
 }

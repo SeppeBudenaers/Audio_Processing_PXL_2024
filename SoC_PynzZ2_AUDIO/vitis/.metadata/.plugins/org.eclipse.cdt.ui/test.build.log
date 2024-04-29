@@ -1,4 +1,4 @@
-16:10:03 **** Incremental Build of configuration Debug for project test ****
+19:20:16 **** Incremental Build of configuration Debug for project test ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -20,12 +20,6 @@ c:\xilinx\vitis\2023.2\gnu\aarch32\nt\gcc-arm-none-eabi\aarch32-xilinx-eabi\usr\
   145 |         int Status;
       |             ^~~~~~
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:199:19: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
-  199 |           scanf("%c",DTMF);
-      |                  ~^  ~~~~
-      |                   |  |
-      |                   |  int
-      |                   char *
 ../src/helloworld.c:166:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
   166 |         int Status;
       |             ^~~~~~
@@ -39,9 +33,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size test.elf  |tee "test.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  92137	   3352	  22752	 118241	  1cde1	test.elf
+  92353	   3352	  22752	 118457	  1ceb9	test.elf
 'Finished building: test.elf.size'
 ' '
 
-16:10:04 Build Finished (took 1s.151ms)
+19:20:17 Build Finished (took 1s.375ms)
 
