@@ -1,4 +1,4 @@
-10:39:40 **** Incremental Build of configuration Debug for project Labo_2_Delay ****
+14:35:35 **** Build of configuration Debug for project Labo_2_Delay ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,9 +21,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size Labo_2_Delay.elf  |tee "Labo_2_Delay.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  32548	   1936	 406680	 441164	  6bb4c	Labo_2_Delay.elf
+  32540	   1936	 406680	 441156	  6bb44	Labo_2_Delay.elf
 'Finished building: Labo_2_Delay.elf.size'
 ' '
 
-10:39:41 Build Finished (took 876ms)
+14:35:37 Build Finished (took 2s.118ms)
 

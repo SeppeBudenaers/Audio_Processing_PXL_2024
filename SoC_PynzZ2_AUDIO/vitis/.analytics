@@ -133,3 +133,79 @@ timestamp=[2024-04-24 10:01:21], mode=BUILD, duration=0:00:00.376, duration_ms=3
 timestamp=[2024-04-24 10:02:00], mode=BUILD, duration=0:00:01.342, duration_ms=1342, data={name=Labo_4_Fixed_Sin, configuration=Debug, clean_build=false}
 timestamp=[2024-04-24 10:05:25], mode=BUILD, duration=0:00:00.831, duration_ms=831, data={name=Labo_4_Fixed_Sin, configuration=Debug, clean_build=false}
 timestamp=[2024-04-24 10:09:12], mode=BUILD, duration=0:00:00.835, duration_ms=835, data={name=Labo_4_Fixed_Sin, configuration=Debug, clean_build=false}
+timestamp=[2024-04-26 10:08:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.118, duration_ms=118, data={}
+timestamp=[2024-04-26 10:08:20], mode=WORKBENCH_START, duration=0:00:10.398, duration_ms=10398, data={}
+timestamp=[2024-04-26 10:08:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.361, duration_ms=361, data={editors_count=3, platform_editors_count=0, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,Labo_1,Labo_1_system,Labo_2,Labo_2_Delay,Labo_2_Delay_system,Labo_2_system,Labo_4_Fixed_Sin,Labo_4_Fixed_Sin_system,RemoteSystemsTempFiles}
+timestamp=[2024-04-29 13:35:27], mode=WORKBENCH_START, duration=0:00:14.603, duration_ms=14603, data={}
+timestamp=[2024-04-29 13:35:30], mode=WORKBENCH_UI_INIT, duration=0:00:03.042, duration_ms=3042, data={editors_count=3, platform_editors_count=0, projects_count=10, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,Labo_1,Labo_1_system,Labo_2,Labo_2_Delay,Labo_2_Delay_system,Labo_2_system,Labo_4_Fixed_Sin,Labo_4_Fixed_Sin_system,RemoteSystemsTempFiles}
+timestamp=[2024-04-29 13:35:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.223, duration_ms=223, data={}
+timestamp=[2024-04-29 13:40:40], mode=PLATFORM_GENERATION, duration=0:00:35.312, duration_ms=35312, data={name=AudioProcessing2}
+timestamp=[2024-04-29 13:40:46], mode=BUILD, duration=0:00:05.558, duration_ms=5558, data={name=Labo_4_Fixed_Sin, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 13:59:13], mode=APP_CREATION, duration=0:00:44.935, duration_ms=44935, data={name=DTMF_Send, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=SoC_Audio, application_type=application}
+timestamp=[2024-04-29 14:01:53], mode=APP_CREATION, duration=0:00:38.020, duration_ms=38020, data={name=DTMF_SENDIGN, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=AudioProcessing2_1, application_type=application}
+timestamp=[2024-04-29 14:09:31], mode=PLATFORM_GENERATION, duration=0:01:04.834, duration_ms=64834, data={name=AudioProcessing2_1}
+timestamp=[2024-04-29 14:09:32], mode=BUILD, duration=0:00:00.884, duration_ms=884, data={name=DTMF_SENDIGN, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:09:34], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=DTMF_SENDIGN, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:10:17], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=DTMF_SENDIGN, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:10:17], mode=BUILD, duration=0:00:00.665, duration_ms=665, data={name=DTMF_SENDIGN, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:15:58], mode=APP_CREATION, duration=0:00:15.033, duration_ms=15033, data={name=DTMF, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=AudioProcessing2, application_type=application}
+timestamp=[2024-04-29 14:17:37], mode=BUILD, duration=0:00:00.770, duration_ms=770, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:18:40], mode=BUILD, duration=0:00:02.079, duration_ms=2079, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:19:42], mode=BUILD, duration=0:00:01.503, duration_ms=1503, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:19:55], mode=BUILD, duration=0:00:11.742, duration_ms=11742, data={name=DTMF_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:20:19], mode=BUILD, duration=0:00:00.466, duration_ms=466, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:20:30], mode=BUILD, duration=0:00:10.231, duration_ms=10231, data={name=DTMF_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:24:20], mode=PLATFORM_GENERATION, duration=0:00:09.525, duration_ms=9525, data={name=AudioProcessing2}
+timestamp=[2024-04-29 14:24:21], mode=BUILD, duration=0:00:00.334, duration_ms=334, data={name=DTMF, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:24:21], mode=BUILD, duration=0:00:00.276, duration_ms=276, data={name=DTMF_system, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:25:12], mode=PLATFORM_GENERATION, duration=0:00:50.283, duration_ms=50283, data={name=AudioProcessing2}
+timestamp=[2024-04-29 14:25:14], mode=BUILD, duration=0:00:02.060, duration_ms=2060, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:25:26], mode=BUILD, duration=0:00:11.377, duration_ms=11377, data={name=DTMF_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:26:39], mode=BUILD, duration=0:00:00.461, duration_ms=461, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:26:41], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:28:32], mode=BUILD, duration=0:00:00.332, duration_ms=332, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:29:58], mode=BUILD, duration=0:00:01.346, duration_ms=1346, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:30:00], mode=BUILD, duration=0:00:00.813, duration_ms=813, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:31:32], mode=BUILD, duration=0:00:02.290, duration_ms=2290, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:31:34], mode=BUILD, duration=0:00:00.914, duration_ms=914, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:31:46], mode=PLATFORM_GENERATION, duration=0:00:11.045, duration_ms=11045, data={name=AudioProcessing2}
+timestamp=[2024-04-29 14:31:47], mode=BUILD, duration=0:00:00.347, duration_ms=347, data={name=DTMF, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:31:47], mode=BUILD, duration=0:00:00.309, duration_ms=309, data={name=DTMF_system, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:31:52], mode=PLATFORM_GENERATION, duration=0:00:04.892, duration_ms=4892, data={name=AudioProcessing2}
+timestamp=[2024-04-29 14:31:52], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=DTMF, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:31:53], mode=BUILD, duration=0:00:00.281, duration_ms=281, data={name=DTMF_system, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:33:28], mode=PLATFORM_GENERATION, duration=0:01:06.521, duration_ms=66521, data={name=AudioProcessing2}
+timestamp=[2024-04-29 14:33:32], mode=BUILD, duration=0:00:04.167, duration_ms=4167, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:34:16], mode=BUILD, duration=0:00:00.363, duration_ms=363, data={name=DTMF, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:34:19], mode=BUILD, duration=0:00:02.863, duration_ms=2863, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:35:34], mode=BUILD, duration=0:00:00.415, duration_ms=415, data={name=DTMF, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:35:37], mode=BUILD, duration=0:00:02.141, duration_ms=2141, data={name=Labo_2_Delay, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:35:49], mode=BUILD, duration=0:00:11.564, duration_ms=11564, data={name=Labo_2_Delay_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:37:59], mode=APP_CREATION, duration=0:00:15.353, duration_ms=15353, data={name=test, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=AudioProcessing2, application_type=application}
+timestamp=[2024-04-29 14:38:56], mode=BUILD, duration=0:00:01.681, duration_ms=1681, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:39:23], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=test, configuration=Debug, clean_build=true}
+timestamp=[2024-04-29 14:39:25], mode=BUILD, duration=0:00:02.628, duration_ms=2628, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:39:53], mode=BUILD, duration=0:00:00.507, duration_ms=507, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:40:06], mode=BUILD, duration=0:00:12.396, duration_ms=12396, data={name=test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:40:56], mode=BUILD, duration=0:00:01.822, duration_ms=1822, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:42:37], mode=BUILD, duration=0:00:01.693, duration_ms=1693, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:43:35], mode=BUILD, duration=0:00:01.675, duration_ms=1675, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:49:07], mode=BUILD, duration=0:00:00.826, duration_ms=826, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:49:39], mode=BUILD, duration=0:00:01.800, duration_ms=1800, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:51:41], mode=BUILD, duration=0:00:02.112, duration_ms=2112, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:52:29], mode=BUILD, duration=0:00:01.621, duration_ms=1621, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:55:28], mode=BUILD, duration=0:00:02.549, duration_ms=2549, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:55:39], mode=BUILD, duration=0:00:00.379, duration_ms=379, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 14:56:26], mode=BUILD, duration=0:00:01.301, duration_ms=1301, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 15:00:00], mode=BUILD, duration=0:00:01.413, duration_ms=1413, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 15:00:10], mode=BUILD, duration=0:00:00.397, duration_ms=397, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 15:01:13], mode=BUILD, duration=0:00:01.620, duration_ms=1620, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 15:47:53], mode=WORKBENCH_START, duration=0:00:07.465, duration_ms=7465, data={}
+timestamp=[2024-04-29 15:47:54], mode=WORKBENCH_UI_INIT, duration=0:00:00.889, duration_ms=889, data={editors_count=1, platform_editors_count=0, projects_count=12, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,Labo_1,Labo_1_system,Labo_2,Labo_2_Delay,Labo_2_Delay_system,Labo_2_system,Labo_4_Fixed_Sin,Labo_4_Fixed_Sin_system,RemoteSystemsTempFiles,test,test_system}
+timestamp=[2024-04-29 15:47:54], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.039, duration_ms=39, data={}
+timestamp=[2024-04-29 16:03:14], mode=BUILD, duration=0:00:00.452, duration_ms=452, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:03:31], mode=BUILD, duration=0:00:00.832, duration_ms=832, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:05:04], mode=BUILD, duration=0:00:00.885, duration_ms=885, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:06:31], mode=BUILD, duration=0:00:00.775, duration_ms=775, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:09:29], mode=BUILD, duration=0:00:01.418, duration_ms=1418, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-04-29 16:10:04], mode=BUILD, duration=0:00:01.167, duration_ms=1167, data={name=test, configuration=Debug, clean_build=false}
