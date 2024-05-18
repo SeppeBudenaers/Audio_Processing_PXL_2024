@@ -109,8 +109,8 @@ static void Timer_ISR(void * CallBackRef) { /* ***** I2S Interruption Handler **
 			frequency_R = 1633;
 			break;
 		default:
-			frequency_L = 0;
-			frequency_R = 0;
+			frequency_L = 1336;
+			frequency_R = 1336;
 	}
 
 	float theta_increment_L = 2* M_PI* frequency_L / SAMPLE_RATE ;
@@ -133,11 +133,10 @@ static void Timer_ISR(void * CallBackRef) { /* ***** I2S Interruption Handler **
 
 	float sine_value_L = sinf(theta_L);
 	float sine_value_R = sinf(theta_R);
-	uint32_t scaled_value_L = (uint32_t)(((sine_value_L + 1.0f) * 0.5f) * (UINT_SCALED_MAX_VALUE/2));
-	uint32_t scaled_value_R = (uint32_t)(((sine_value_R + 1.0f) * 0.5f) * (UINT_SCALED_MAX_VALUE/2));
+	float combined_sine_value = (sine_value_R + sine_value_L ) / 2.0f;
+	uint32_t scaled_value = (uint32_t)(((combined_sine_value + 1.0f) * 0.5f) * (UINT_SCALED_MAX_VALUE/2));
 
-	Xil_Out32(I2S_DATA_TX_L_REG, scaled_value_L);
-	Xil_Out32(I2S_DATA_TX_R_REG, scaled_value_R);
+	Xil_Out32(I2S_DATA_TX_L_REG, scaled_value);
 }
 
 static int Timer_Intr_Setup(XScuGic * IntcInstancePtr, XScuTimer *TimerInstancePtr, u16 TimerIntrId)

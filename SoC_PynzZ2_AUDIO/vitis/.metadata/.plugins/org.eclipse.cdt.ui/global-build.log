@@ -1,40 +1,9 @@
 Nothing to build in platform 'AudioProcessing2'
 
-19:20:16 **** Incremental Build of configuration Debug for project test ****
-make all 
+13:53:31 **** Incremental Build of configuration Debug for project DSPApp ****
+make -j8 all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:33: warning: "M_PI" redefined
-   33 | #define M_PI 3.1415
-      | 
-In file included from ../src/audio.h:12,
-                 from ../src/helloworld.c:20:
-c:\xilinx\vitis\2023.2\gnu\aarch32\nt\gcc-arm-none-eabi\aarch32-xilinx-eabi\usr\include\math.h:603: note: this is the location of the previous definition
-  603 | #define M_PI            3.14159265358979323846
-      | 
-../src/helloworld.c: In function 'Timer_Intr_Setup':
-../src/helloworld.c:145:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  145 |         int Status;
-      |             ^~~~~~
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:166:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
-  166 |         int Status;
-      |             ^~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/02_PXL/Audio_Processing_PXL_2024/SoC_PynzZ2_AUDIO/vitis/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  92353	   3352	  22752	 118457	  1ceb9	test.elf
-'Finished building: test.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
