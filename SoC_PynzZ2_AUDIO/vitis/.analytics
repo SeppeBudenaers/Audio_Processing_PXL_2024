@@ -311,3 +311,36 @@ timestamp=[2024-05-18 13:49:07], mode=BUILD, duration=0:00:12.038, duration_ms=1
 timestamp=[2024-05-18 13:50:50], mode=BUILD, duration=0:00:16.699, duration_ms=16699, data={name=DSPApp, configuration=Debug, clean_build=false}
 timestamp=[2024-05-18 13:53:05], mode=BUILD, duration=0:00:14.038, duration_ms=14038, data={name=DSPApp, configuration=Debug, clean_build=false}
 timestamp=[2024-05-18 13:53:41], mode=BUILD, duration=0:00:10.625, duration_ms=10625, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:40:35], mode=WORKBENCH_START, duration=0:00:08.004, duration_ms=8004, data={}
+timestamp=[2024-05-22 08:40:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.827, duration_ms=827, data={editors_count=5, platform_editors_count=1, projects_count=14, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,DSPApp,DSPApp_system,Labo_1,Labo_1_system,Labo_2,Labo_2_Delay,Labo_2_Delay_system,Labo_2_system,Labo_4_Fixed_Sin,Labo_4_Fixed_Sin_system,RemoteSystemsTempFiles,test,test_system}
+timestamp=[2024-05-22 08:40:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.143, duration_ms=143, data={}
+timestamp=[2024-05-22 08:47:52], mode=BUILD, duration=0:00:11.555, duration_ms=11555, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:02], mode=BUILD, duration=0:00:09.462, duration_ms=9462, data={name=DSPApp_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:05], mode=BUILD, duration=0:00:02.632, duration_ms=2632, data={name=Labo_1, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:10], mode=BUILD, duration=0:00:05.215, duration_ms=5215, data={name=Labo_1_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:11], mode=BUILD, duration=0:00:00.262, duration_ms=262, data={name=Labo_2, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:11], mode=BUILD, duration=0:00:00.258, duration_ms=258, data={name=Labo_2_Delay, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:17], mode=BUILD, duration=0:00:05.266, duration_ms=5266, data={name=Labo_2_Delay_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:22], mode=BUILD, duration=0:00:05.212, duration_ms=5212, data={name=Labo_2_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:22], mode=BUILD, duration=0:00:00.260, duration_ms=260, data={name=Labo_4_Fixed_Sin, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:28], mode=BUILD, duration=0:00:05.160, duration_ms=5160, data={name=Labo_4_Fixed_Sin_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:28], mode=BUILD, duration=0:00:00.260, duration_ms=260, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:48:33], mode=BUILD, duration=0:00:05.268, duration_ms=5268, data={name=test_system, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:50:21], mode=BUILD, duration=0:00:09.302, duration_ms=9302, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:54:10], mode=BUILD, duration=0:00:08.930, duration_ms=8930, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 08:55:34], mode=BUILD, duration=0:00:08.103, duration_ms=8103, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 09:11:19], mode=BUILD, duration=0:00:08.136, duration_ms=8136, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 09:26:59], mode=BUILD, duration=0:00:07.757, duration_ms=7757, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-22 09:29:19], mode=BUILD, duration=0:00:07.847, duration_ms=7847, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 15:38:05], mode=WORKBENCH_START, duration=0:00:15.814, duration_ms=15814, data={}
+timestamp=[2024-05-27 15:38:07], mode=WORKBENCH_UI_INIT, duration=0:00:01.779, duration_ms=1779, data={editors_count=2, platform_editors_count=1, projects_count=14, platform_projects_count=1, active_platform_editor=false, projects=AudioProcessing2,DSPApp,DSPApp_system,Labo_1,Labo_1_system,Labo_2,Labo_2_Delay,Labo_2_Delay_system,Labo_2_system,Labo_4_Fixed_Sin,Labo_4_Fixed_Sin_system,RemoteSystemsTempFiles,test,test_system}
+timestamp=[2024-05-27 15:38:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.236, duration_ms=236, data={}
+timestamp=[2024-05-27 15:39:11], mode=BUILD, duration=0:00:11.693, duration_ms=11693, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 15:39:18], mode=BUILD, duration=0:00:00.330, duration_ms=330, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 15:48:18], mode=BUILD, duration=0:00:00.402, duration_ms=402, data={name=test, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 15:48:42], mode=BUILD, duration=0:00:18.479, duration_ms=18479, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 17:16:29], mode=BUILD, duration=0:00:14.523, duration_ms=14523, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 17:26:25], mode=BUILD, duration=0:00:11.520, duration_ms=11520, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 17:26:48], mode=BUILD, duration=0:00:14.009, duration_ms=14009, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 17:31:17], mode=BUILD, duration=0:00:16.752, duration_ms=16752, data={name=DSPApp, configuration=Debug, clean_build=false}
+timestamp=[2024-05-27 17:58:40], mode=BUILD, duration=0:00:26.546, duration_ms=26546, data={name=DSPApp, configuration=Debug, clean_build=false}

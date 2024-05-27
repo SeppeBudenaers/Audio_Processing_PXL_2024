@@ -18,8 +18,9 @@ volatile int Timer_Intr_rcvd;
 
 
 
-#define SAMPLE_RATE 48000
+#define SAMPLE_RATE 8000
 #define TEST_LENGTH_SAMPLES 2048
+#define UINT_SCALED_MAX_VALUE 0xFFFFF
 
 /* -------------------------------------------------------------------
 * External Input and Output buffer Declarations for FFT Bin Example
@@ -35,7 +36,7 @@ uint32_t doBitReverse = 1;
 arm_cfft_instance_f32 varInstCfftF32;
 
 /* Reference index at which max energy of bin ocuurs */
-uint32_t refIndex = 213, testIndex = 0;
+uint32_t testIndex2 = 213, testIndex1 = 0;
 
 
 uint8_t Buffer_Flag = 0;
@@ -47,21 +48,29 @@ float32_t FFT_Output[TEST_LENGTH_SAMPLES/2];
 
 static void Timer_ISR(void * CallBackRef) { /* ***** I2S Interruption Handler **** */
 	static int  counter;
+	uint32_t Int_Value;
+	float32_t Float_Value;
+
+	Int_Value = Xil_In32(I2S_DATA_RX_L_REG);
+	Float_Value = (float32_t)((Int_Value * 4.0f)/(UINT_SCALED_MAX_VALUE) -1.0f);
+
 	switch (Buffer_Flag) {
 		case 0:
-			Buffer1[counter] = Xil_In32(I2S_DATA_RX_L_REG);
+			Buffer1[counter] = Float_Value;
+			Buffer1[counter+1] = 0;
 //			Buffer1[counter] = testInput_f32_10khz[counter];
 			break;
 		case 1:
-			Buffer2[counter] = Xil_In32(I2S_DATA_RX_L_REG);
+			Buffer2[counter] = Float_Value;
+			Buffer2[counter+1] = 0;
 //			Buffer2[counter] = testInput_f32_10khz[counter];
 			break;
 		default:
 			break;
 	}
-
-	counter++;
+	counter= counter + 2;
 	if(counter >= TEST_LENGTH_SAMPLES){
+
 		switch (Buffer_Flag) {
 			case 0:
 				FFT_Buffer_Ptr = Buffer1;
@@ -140,12 +149,57 @@ int main()
 
 			/* Process the data through the Complex Magnitude Module for calculating the magnitude at each bin */
 			arm_cmplx_mag_f32(FFT_Buffer_Ptr, FFT_Output, fftSize);
-
+			FFT_Output[0]=-1.0;
+			for (int var = 240; var < 1024; ++var) {
+				FFT_Output[var]=-1.0;
+			}
 			/* Calculates maxValue and returns corresponding BIN value */
-			arm_max_f32(FFT_Output, fftSize, &maxValue, &testIndex);
+			arm_max_f32(FFT_Output, fftSize, &maxValue, &testIndex1);
+			FFT_Output[testIndex1]=-1.0;
 
-			xil_printf("Index : %d\n\r",testIndex);
+			arm_max_f32(FFT_Output, fftSize, &maxValue, &testIndex2);
 
+			if(testIndex1 >= testIndex2){
+				uint32_t temp;
+				temp = testIndex1;
+				testIndex1 = testIndex2;
+				testIndex2 = temp;
+			}
+
+			switch (testIndex1) {
+			    case 89:
+			        switch (testIndex2) {
+			            case 155: xil_printf("1\n\r"); break;
+			            case 171: xil_printf("2\n\r"); break;
+			            case 189: xil_printf("3\n\r"); break;
+			            case 209: xil_printf("A\n\r"); break;
+			        }
+			        break;
+			    case 99:
+			        switch (testIndex2) {
+			            case 155: xil_printf("4\n\r"); break;
+			            case 171: xil_printf("5\n\r"); break;
+			            case 189: xil_printf("6\n\r"); break;
+			            case 209: xil_printf("B\n\r"); break;
+			        }
+			        break;
+			    case 109:
+			        switch (testIndex2) {
+			            case 155: xil_printf("7\n\r"); break;
+			            case 171: xil_printf("8\n\r"); break;
+			            case 189: xil_printf("9\n\r"); break;
+			            case 209: xil_printf("C\n\r"); break;
+			        }
+			        break;
+			    case 120:
+			        switch (testIndex2) {
+			            case 155: xil_printf("*\n\r"); break;
+			            case 171: xil_printf("0\n\r"); break;
+			            case 189: xil_printf("#\n\r"); break;
+			            case 209: xil_printf("D\n\r"); break;
+			        }
+			        break;
+			}
 			FFT_Ready_Flag = 0;
 		}
 	}
